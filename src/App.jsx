@@ -3,12 +3,12 @@ import Navbar from "./components/navbar";
 import Todo from "./components/todo";
 import "./App.css";
 function App() {
-  const [task, setTask] = useState("");
+  const [task, setTask] = useState([]);
 
   return (
     <div className="header">
-      <Navbar task={task} setTask={setTask} />
-      <Todo task={task} />
+      <Navbar tasks={task} setTasks={setTask} />
+      <Todo tasks={task} />
     </div>
   );
 }
