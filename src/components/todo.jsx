@@ -1,6 +1,6 @@
-import "./todo.css"
+import "./todo.css";
 
-function Todo({ tasks }) {
+function Todo({ tasks, setInProgress }) {
     return (
         <div className="todo-section">
             <h3>TODO</h3>
@@ -8,6 +8,7 @@ function Todo({ tasks }) {
                 <div className="task-section" key={index}>
                     <p>{task}</p>
                     <p>Status: ToDo</p>
+                    <button onClick={() => setInProgress(prev => [...prev, task])}>Move to InProgress</button>
                 </div>
             ))}
         </div>

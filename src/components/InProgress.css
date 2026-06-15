@@ -1,0 +1,48 @@
+/* inprogress.css */
+
+.inprogress-section {
+    background: #f4f6f8;
+    padding: 20px;
+    margin: 20px auto;
+    width: 360px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.inprogress-section h3 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    color: #2c3e50;
+    border-bottom: 2px solid #2980b9;
+    /* blue accent */
+    padding-bottom: 6px;
+    text-align: center;
+}
+
+.task-section {
+    background: #fff;
+    margin-top: 12px;
+    padding: 14px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task-section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.task-section p {
+    margin: 6px 0;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.task-section p:last-child {
+    font-weight: bold;
+    color: #2980b9;
+    /* blue for In Progress */
+}
