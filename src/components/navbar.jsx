@@ -1,10 +1,9 @@
 import { useState } from "react";
 import "./navbar.css"
 
-function Navbar() {
+function Navbar({ task, setTask }) {
     const [showCard, setShowCard] = useState(false);
 
-    const [task, setTask] = useState("");
     return (
         <>
             <nav className="navbar">
