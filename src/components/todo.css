@@ -35,6 +35,9 @@
     margin: 6px 0;
     font-size: 0.95rem;
     color: #333;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
 
 .task-section p:last-child {
